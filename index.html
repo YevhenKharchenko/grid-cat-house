@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Cat House</title>
+    <title>Project</title>
   </head>
 
   <body>
@@ -25,7 +25,19 @@
         <ul class="posts">
           <li class="post">
             <a href="#">
-              <img src="./img/picture 1.png" alt="kitten" class="post-img" />
+              <picture>
+                <!-- For viewports wider than 768px -->
+                <source media="(min-width: 768px)" srcset="img/picture-1.png" />
+
+                <!-- For viewports between 320px and 768px -->
+                <source
+                  media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="img/picture-1-small.png"
+                />
+
+                <!-- Fallback content -->
+                <img src="img/picture-1-small.png" alt="Description of Image" />
+              </picture>
               <div class="overlay">
                 <h2 class="post-title sub-title">
                   Коти та їхні чудові навички: від полювання до загадкових
@@ -37,7 +49,7 @@
           <li class="post">
             <a href="#">
               <img
-                src="./img/picture 2.png"
+                src="./img/picture-2.png"
                 alt="scary kitten"
                 class="post-img"
               />
@@ -51,7 +63,7 @@
           </li>
           <li class="post">
             <a href="#">
-              <img src="./img/picture 3.png" alt="cat" class="post-img" />
+              <img src="./img/picture-3.png" alt="cat" class="post-img" />
               <div class="overlay">
                 <h2 class="post-title sub-title">
                   Котячі породи для активних власників: як вибрати компаньйона
@@ -129,7 +141,7 @@
                     alt="instagram"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
               <li class="socials-item">
@@ -139,7 +151,7 @@
                     alt="facebook"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
               <li class="socials-item">
@@ -149,7 +161,7 @@
                     alt="youtube"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
               <li class="socials-item">
@@ -159,7 +171,7 @@
                     alt="tiktok"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
               <li class="socials-item">
@@ -169,7 +181,7 @@
                     alt="github"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
               <li class="socials-item">
@@ -179,7 +191,7 @@
                     alt="twitter"
                     class="social-icon"
                   />
-                  <p class="social-subscripers">230.000</p>
+                  <p class="social-subscribers">230.000</p>
                 </a>
               </li>
             </ul>
